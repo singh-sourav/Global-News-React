@@ -1,0 +1,87 @@
+.App {
+  color:rgb(234, 240, 234);
+  background-color: rgb(4, 32, 4);
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 130px;
+}
+
+.App-header {
+  background-color: rgb(209, 206, 206);
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+html, body {
+  text-align: center;
+  padding-top: 40px;
+  
+  -webkit-perspective: 700px;
+     -moz-perspective: 700px;
+      -ms-perspective: 700px;
+          perspective: 700px;
+}
+
+
+
+
+
+.btn-group button {
+  background-color: rgb(198, 212, 199); /* Green background */
+  border: 1px solid green; /* Green border */
+  color: rgb(31, 29, 29); /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+
+.btn-group button:active {
+  background-color: #3e8e41;
+}
+
+.btn-info.active {
+  background-color: limegreen;
+}
+
+
+
+div.dotted {border-style: dotted;}
+div.dashed {border-style: dashed;}
+div.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
