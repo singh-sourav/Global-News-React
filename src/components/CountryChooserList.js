@@ -3,7 +3,6 @@ import './Home.css';
 import CountryChooser from './CountryChooser'
 
 class CountryChooserList extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -13,17 +12,12 @@ class CountryChooserList extends Component {
     };
   }
 
-
-
   render() {
-
     var countryselector = this.state.countries.map((item) => (
 
       <CountryChooser key={item} country={item} countrygetter={() => this.props.countryGetter(item)} onclick={() => this.props.showNews(item)} />
-
     )
     )
-
     return (
       <div className="btn-group">
         {
@@ -32,11 +26,6 @@ class CountryChooserList extends Component {
       </div>
     );
   }
-
-
-
-
-
 }
 
 export default CountryChooserList;
